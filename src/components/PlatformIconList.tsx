@@ -10,7 +10,6 @@ import { IconType } from "react-icons";
     platforms : Platform[]
  }
  const PlatformIconList = ({platforms} : Props) => {
-
     const iconMap : {[key: string] : IconType}= {
         pc: FaWindows,
         playstation: FaPlaystation,
@@ -23,7 +22,7 @@ import { IconType } from "react-icons";
         web: BsGlobe
     }
    return (
-        <HStack marginY={1}>
+        <HStack marginY={6}>
      {platforms.map(( platform ) => (
         <Icon as={iconMap[platform.slug]} color='gray.500'/>
         ))}
