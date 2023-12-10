@@ -24,7 +24,7 @@ import { IconType } from "react-icons";
    return (
         <HStack marginY={6}>
      {platforms.map(( platform ) => (
-        <Icon as={iconMap[platform.slug]} color='gray.500'/>
+        <Icon key={platform.id} as={iconMap[platform.slug]} color='gray.500'/>
         ))}
         </HStack>
     )
